@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Bold.ttf">
+            <string>Poppins-Bold</string>
+        </array>
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerifyNumberVC" customModule="ElBait" customModuleProvider="target">
+            <connections>
+                <outlet property="btnVerify" destination="JFB-U7-y9Z" id="qXe-GI-skp"/>
+                <outlet property="lblPhone" destination="CSF-PA-GC5" id="HoV-gA-pvJ"/>
+                <outlet property="txtOTP1" destination="7i3-Jr-uYt" id="HdV-Zr-LYd"/>
+                <outlet property="txtOTP2" destination="799-NL-HQr" id="RF5-r8-ebB"/>
+                <outlet property="txtOTP3" destination="o8t-g6-8QW" id="rle-Mz-cQn"/>
+                <outlet property="txtOTP4" destination="qJH-9s-8KF" id="8t9-Aw-IUx"/>
+                <outlet property="txtOTP5" destination="JGQ-33-q7a" id="erl-8M-fLG"/>
+                <outlet property="txtOTP6" destination="uti-9v-Rzg" id="piv-Ot-ANq"/>
+                <outlet property="view" destination="sUt-Z4-yeg" id="r69-KP-dkR"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="sUt-Z4-yeg">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R5D-fy-dUN">
+                    <rect key="frame" x="0.0" y="44" width="414" height="107.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUd-CB-yfJ">
+                            <rect key="frame" x="8" y="16" width="65" height="65"/>
+                            <state key="normal" image="back_arrow"/>
+                            <connections>
+                                <action selector="btnBack:" destination="-1" eventType="touchUpInside" id="MbC-W9-KFe"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="sUd-CB-yfJ" firstAttribute="leading" secondItem="R5D-fy-dUN" secondAttribute="leading" constant="8" id="70F-ae-2F5"/>
+                        <constraint firstItem="sUd-CB-yfJ" firstAttribute="top" secondItem="R5D-fy-dUN" secondAttribute="top" constant="16" id="EW3-rh-3yq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e5n-6A-8qy">
+                    <rect key="frame" x="0.0" y="151.5" width="414" height="125.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Your Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orr-VW-XEL">
+                            <rect key="frame" x="16" y="8" width="232.5" height="32.5"/>
+                            <fontDescription key="fontDescription" name="Poppins-Bold" family="Poppins" pointSize="23"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the code sent to +20 123 456 7896" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSF-PA-GC5">
+                            <rect key="frame" x="16" y="48.5" width="256" height="18.5"/>
+                            <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                            <color key="textColor" red="0.76078431369999999" green="0.76078431369999999" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="orr-VW-XEL" firstAttribute="top" secondItem="e5n-6A-8qy" secondAttribute="top" constant="8" id="4uV-Cz-EWD"/>
+                        <constraint firstItem="orr-VW-XEL" firstAttribute="leading" secondItem="e5n-6A-8qy" secondAttribute="leading" constant="16" id="AuV-rG-LgO"/>
+                        <constraint firstItem="CSF-PA-GC5" firstAttribute="leading" secondItem="orr-VW-XEL" secondAttribute="leading" id="cbU-z7-k7f"/>
+                        <constraint firstItem="CSF-PA-GC5" firstAttribute="top" secondItem="orr-VW-XEL" secondAttribute="bottom" constant="8" id="sKT-NS-Dm3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="klB-zl-q13">
+                    <rect key="frame" x="0.0" y="277" width="414" height="134.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pCB-Yi-39u">
+                            <rect key="frame" x="47" y="44.5" width="320" height="45"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7i3-Jr-uYt" customClass="RoundTextField" customModule="ElBait" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="j8U-G4-hJS"/>
+                                        <constraint firstAttribute="height" constant="45" id="q7W-md-EzD"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="799-NL-HQr" customClass="RoundTextField" customModule="ElBait" customModuleProvider="target">
+                                    <rect key="frame" x="55" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="Fpl-na-YWN"/>
+                                        <constraint firstAttribute="width" constant="45" id="Og6-FY-WLs"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o8t-g6-8QW" customClass="RoundTextField" customModule="ElBait" customModuleProvider="target">
+                                    <rect key="frame" x="110" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="2hG-5A-fdd"/>
+                                        <constraint firstAttribute="width" constant="45" id="hT1-ct-QSA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qJH-9s-8KF" customClass="RoundTextField" customModule="ElBait" customModuleProvider="target">
+                                    <rect key="frame" x="165" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="45" id="9QA-Hg-VCZ"/>
+                                        <constraint firstAttribute="width" constant="45" id="TLa-CR-nMA"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JGQ-33-q7a" customClass="RoundTextField" customModule="ElBait" customModuleProvider="target">
+                                    <rect key="frame" x="220" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="bzd-ML-a5K"/>
+                                        <constraint firstAttribute="height" constant="45" id="zaI-iJ-3rj"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uti-9v-Rzg" customClass="RoundTextField" customModule="ElBait" customModuleProvider="target">
+                                    <rect key="frame" x="275" y="0.0" width="45" height="45"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="8nN-qV-XHl"/>
+                                        <constraint firstAttribute="height" constant="45" id="tgA-QY-t73"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="pCB-Yi-39u" firstAttribute="centerY" secondItem="klB-zl-q13" secondAttribute="centerY" id="89n-40-Jrz"/>
+                        <constraint firstItem="pCB-Yi-39u" firstAttribute="centerX" secondItem="klB-zl-q13" secondAttribute="centerX" id="gkd-0v-Rv5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yj9-nz-0D2">
+                    <rect key="frame" x="0.0" y="411.5" width="414" height="450.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="Gt2-Ks-L21">
+                            <rect key="frame" x="16" y="16" width="382" height="112.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JFB-U7-y9Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="382" height="47"/>
+                                    <color key="backgroundColor" red="0.050980392159999999" green="0.28627450980000002" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                    <state key="normal" title="VERIFY">
+                                        <color key="titleColor" red="0.98823529409999999" green="0.98823529409999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="goVerify:" destination="-1" eventType="touchUpInside" id="Ubk-jp-mCA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A7l-cD-lnU">
+                                    <rect key="frame" x="0.0" y="79.5" width="382" height="33"/>
+                                    <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="15"/>
+                                    <state key="normal" title="Resend Verification Code">
+                                        <color key="titleColor" red="0.050980392159999999" green="0.28627450980000002" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="resendOTP:" destination="-1" eventType="touchUpInside" id="XJZ-Rr-x7i"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Gt2-Ks-L21" firstAttribute="top" secondItem="yj9-nz-0D2" secondAttribute="top" constant="16" id="5AH-hv-Hsp"/>
+                        <constraint firstItem="Gt2-Ks-L21" firstAttribute="height" secondItem="yj9-nz-0D2" secondAttribute="height" multiplier="0.25" id="Lr7-Zb-zC7"/>
+                        <constraint firstAttribute="trailing" secondItem="Gt2-Ks-L21" secondAttribute="trailing" constant="16" id="h70-PL-0tz"/>
+                        <constraint firstItem="Gt2-Ks-L21" firstAttribute="leading" secondItem="yj9-nz-0D2" secondAttribute="leading" constant="16" id="jls-6m-wg8"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="e5n-6A-8qy" firstAttribute="height" secondItem="sUt-Z4-yeg" secondAttribute="height" multiplier="0.14" id="1ke-N4-qBn"/>
+                <constraint firstItem="yj9-nz-0D2" firstAttribute="leading" secondItem="q1D-Yq-DKM" secondAttribute="leading" id="3Hb-hf-Qy9"/>
+                <constraint firstItem="R5D-fy-dUN" firstAttribute="top" secondItem="q1D-Yq-DKM" secondAttribute="top" id="FJv-Nj-T7x"/>
+                <constraint firstItem="q1D-Yq-DKM" firstAttribute="trailing" secondItem="klB-zl-q13" secondAttribute="trailing" id="JGs-gj-5Iu"/>
+                <constraint firstItem="klB-zl-q13" firstAttribute="height" secondItem="sUt-Z4-yeg" secondAttribute="height" multiplier="0.15" id="UjL-Ix-vVt"/>
+                <constraint firstItem="e5n-6A-8qy" firstAttribute="top" secondItem="R5D-fy-dUN" secondAttribute="bottom" id="VMP-eK-EJo"/>
+                <constraint firstItem="R5D-fy-dUN" firstAttribute="leading" secondItem="q1D-Yq-DKM" secondAttribute="leading" id="bIu-BV-0fU"/>
+                <constraint firstItem="yj9-nz-0D2" firstAttribute="top" secondItem="klB-zl-q13" secondAttribute="bottom" id="cnp-8g-wBa"/>
+                <constraint firstItem="q1D-Yq-DKM" firstAttribute="trailing" secondItem="e5n-6A-8qy" secondAttribute="trailing" id="gIx-C3-juv"/>
+                <constraint firstItem="q1D-Yq-DKM" firstAttribute="trailing" secondItem="yj9-nz-0D2" secondAttribute="trailing" id="gSu-SG-1qP"/>
+                <constraint firstItem="klB-zl-q13" firstAttribute="leading" secondItem="q1D-Yq-DKM" secondAttribute="leading" id="hbN-Mx-lX7"/>
+                <constraint firstItem="klB-zl-q13" firstAttribute="top" secondItem="e5n-6A-8qy" secondAttribute="bottom" id="irm-24-yEy"/>
+                <constraint firstItem="JFB-U7-y9Z" firstAttribute="height" secondItem="klB-zl-q13" secondAttribute="height" multiplier="0.35" id="lyG-Pw-po6"/>
+                <constraint firstItem="q1D-Yq-DKM" firstAttribute="trailing" secondItem="R5D-fy-dUN" secondAttribute="trailing" id="nl8-Uo-Bol"/>
+                <constraint firstItem="q1D-Yq-DKM" firstAttribute="bottom" secondItem="yj9-nz-0D2" secondAttribute="bottom" id="sVy-p9-bNW"/>
+                <constraint firstItem="e5n-6A-8qy" firstAttribute="leading" secondItem="q1D-Yq-DKM" secondAttribute="leading" id="vfx-bh-8qE"/>
+                <constraint firstItem="R5D-fy-dUN" firstAttribute="height" secondItem="sUt-Z4-yeg" secondAttribute="height" multiplier="0.12" id="ysX-3J-Fe1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="q1D-Yq-DKM"/>
+            <point key="canvasLocation" x="131.8840579710145" y="152.67857142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_arrow" width="65" height="65"/>
+    </resources>
+</document>
